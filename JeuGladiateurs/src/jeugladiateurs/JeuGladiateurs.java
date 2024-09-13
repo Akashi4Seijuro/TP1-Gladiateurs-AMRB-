@@ -17,8 +17,7 @@ public class JeuGladiateurs {
     Personnage Bob = new Personnage("Bob le malchanceux", 70, 15, 15, 15);
     Personnage Igor = new Personnage("Igor l'empaleur", 100, 25, 5, 30);
     
-    Bob.afficherInfosPersonnage();
-    Igor.afficherInfosPersonnage();
+ 
     // </editor-fold>
 
     // **************************************************************************
@@ -26,7 +25,10 @@ public class JeuGladiateurs {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Affichage pré-combat">
     // TODO : Afficher les infos de chaque personnage
+    Bob.afficherInfosPersonnage();
+    Igor.afficherInfosPersonnage();
     // TODO : Afficher le message du début du combat
+    affichage.afficherDebutCombat();
     // </editor-fold>
 
     // **************************************************************************
