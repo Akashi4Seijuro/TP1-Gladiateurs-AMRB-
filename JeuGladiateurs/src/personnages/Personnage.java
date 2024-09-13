@@ -92,7 +92,7 @@ public class Personnage {
 
     }
 
-     public int attaqueCalcul() {
+     private int attaqueCalcul() {
         Random rand = new Random();
         int randomNumber = rand.nextInt(this.getValeurMaxAttaque());
         return randomNumber;
