@@ -88,8 +88,14 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
-        System.out.println("\n" + this.getNom() + "\n    attaque : " + this.getValeurMaxAttaque() + "\n    Defense : " + this.getValeurDefense() + "\n    Points de vie : " + this.getPointsDeVie() + "\n    Initiative : " + this.getInitiative() + "\n    Statut : Vivant");
-
+        if (this.getPointsDeVie() == 0)
+        {
+             System.out.println("\n" + this.getNom() + "\n    attaque : " + this.getValeurMaxAttaque() + "\n    Defense : " + this.getValeurDefense() + "\n    Points de vie : " + this.getPointsDeVie() + "\n    Initiative : " + this.getInitiative() + "\n    Statut : Mort");
+        }
+        else
+        {
+                 System.out.println("\n" + this.getNom() + "\n    attaque : " + this.getValeurMaxAttaque() + "\n    Defense : " + this.getValeurDefense() + "\n    Points de vie : " + this.getPointsDeVie() + "\n    Initiative : " + this.getInitiative() + "\n    Statut : Vivant");
+        }
     }
 
      private int attaqueCalcul() {
@@ -126,7 +132,6 @@ public class Personnage {
         {
             System.out.println("Les dommages sont de : " + dommage);
         }
-        personnageCible.afficherInfosPersonnage();
         System.out.println("");
     }
 
