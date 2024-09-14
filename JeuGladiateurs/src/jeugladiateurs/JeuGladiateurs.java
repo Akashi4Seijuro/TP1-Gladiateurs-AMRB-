@@ -17,7 +17,7 @@ public class JeuGladiateurs {
     Personnage Bob = new Personnage("Bob le malchanceux", 70, 15, 15, 15);
     Personnage Igor = new Personnage("Igor l'empaleur", 100, 25, 5, 30);
     
- 
+    
     // </editor-fold>
 
     // **************************************************************************
